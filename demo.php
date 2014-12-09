@@ -14,6 +14,8 @@ $servername =  getenv('MYSQL_SERVICE_HOST') . ":" . getenv('MYSQL_SERVICE_PORT')
 $username = 'root';
 $password = '';
 
+echo "MYSQL Server: " . $servername . "<br />";
+
 // Create connection
 $conn = mysql_connect($servername, $username, $password);
 
